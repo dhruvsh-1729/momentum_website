@@ -56,7 +56,8 @@ const Header = () => {
               <div className="nav-link"><a href="/" onClick={ (e) => handleClick(e,"features")}>Features</a></div>
 
               <div className="nav-link"><a href="/" onClick={ (e) => handleClick(e,"about")}>About Us</a></div>
-            
+
+              <div className="nav-link"><Link to="/gallery">Gallery</Link></div>         
               {/* {" "}
               <div className="nav-link"><a href="/blog">Blog</a></div>
             

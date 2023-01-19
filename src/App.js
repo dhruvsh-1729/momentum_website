@@ -11,6 +11,7 @@ import { Routes, Route,Link, Navigate} from "react-router-dom";
 import ProductsSlider from "./components/pages/home/Products/ProductsSlider";
 import Careers from "./components/pages/home/Careers";
 import  Contact from "./components/pages/contact/Contact";
+import Gallery from "./components/pages/gallery/Gallery"
 // import SideNav from "./components/SideNav/SideNav";
 import Irrulas500 from "./components/pages/home/Products/models/irrulas500";
 
@@ -45,6 +46,12 @@ function App() {
     <Route path="/contact" element={
     <>
     <Contact />
+    </>
+    } />
+
+<Route path="/gallery" element={
+    <>
+    <Gallery />
     </>
     } />
 
