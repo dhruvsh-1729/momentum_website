@@ -1,7 +1,19 @@
 import classes from "./Landing.module.css";
-
 import LandingSlider from "./LandingSlider";
+
 const Landing = () => {
+
+  const handleClick = (e,id) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if(element){
+    var headerOffset = 60;
+    var elementPosition = element.offsetTop;
+    var offsetPosition = elementPosition - headerOffset;
+    document.documentElement.scrollTop = offsetPosition;
+    document.body.scrollTop = offsetPosition;
+    }
+  }
   return (
     <div id="landing" className={classes.landing}>
       <div className={classes["landing-container"]}>
@@ -17,7 +29,7 @@ const Landing = () => {
               <p>We automate to leverage growth</p>
             </div>
             <div className={classes["banner-nav"]}>
-              <a href="/"> Our Solutions</a>
+            <a href="/" onClick={ (e) => handleClick(e,"products")}> Our Solutions</a>
             </div>
           </div>
         </div>
