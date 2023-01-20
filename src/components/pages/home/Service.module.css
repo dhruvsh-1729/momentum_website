@@ -11,9 +11,11 @@
 
 .services-container {
   font-family: var(--font-primary);
-
   width: 100%;
   margin-top:4rem;
+  margin-left:4rem;
+  margin-right:4rem;
+  
   height: fit-content;
   display: flex;
   justify-content: space-between;
@@ -23,6 +25,7 @@
 .services-icon {
   display: flex;
   justify-content: flex-start;
+  
 }
 .services-heading {
   position: relative;
@@ -33,6 +36,7 @@
   font-size: 1.4rem;
   position: relative;
   color: white;
+  font-weight:700;
 }
 .services-heading::before {
   position: absolute;
@@ -42,11 +46,11 @@
   /* background: var(--color-quart); */
   background: rgb(5, 136, 5);
 
-  bottom: 1px;
+  /* bottom: 1px;
   bottom: 3px;
   left: 0;
   right: 0;
-  height: 10px;
+  height: 10px; */
 }
 .services-desc {
   margin-top: 20px;
@@ -60,6 +64,8 @@
 .services-nav-btn {
   margin-top: 2rem;
   padding: 5px;
+  position: relative;
+  left:-3rem;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -70,7 +76,7 @@
   background: #03c03c;
   align-self: flex-end;
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: 20px 20px;
 }
 .services-nav-btn img {
   width: 25px;

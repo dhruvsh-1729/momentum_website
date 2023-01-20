@@ -1,5 +1,6 @@
 import arrowIcon from "../../assets/images/arrow_icon.png";
 import classes from "./Service.module.css";
+import {Link} from "react-router-dom";
 
 const Service = () => {
   return (
@@ -23,7 +24,7 @@ const Service = () => {
             </p>
           </div>
           <div className={classes["services-nav-btn"]}>
-            <img src={arrowIcon} alt="" />
+            <Link to="/construction"><img src={arrowIcon} alt="" /></Link>
           </div>
         </div>
         <div className={classes["services-offered"]}>
@@ -44,7 +45,7 @@ const Service = () => {
             </p>
           </div>
           <div className={classes["services-nav-btn"]}>
-            <img src={arrowIcon} alt="" />
+          <Link to="/construction"><img src={arrowIcon} alt="" /></Link>
           </div>
         </div>
         <div className={classes["services-offered"]}>
@@ -65,7 +66,7 @@ const Service = () => {
             </p>
           </div>
           <div className={classes["services-nav-btn"]}>
-            <img src={arrowIcon} alt="" />
+          <Link to="/construction"><img src={arrowIcon} alt="" /></Link>
           </div>
         </div>
       </div>

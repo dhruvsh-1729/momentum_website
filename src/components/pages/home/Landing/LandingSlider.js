@@ -93,6 +93,8 @@ const Wrap = styled.div`
     height: 100%;
   }
   img {
+    position:relative;
+    top:40px;
     height: 100vh;
     width: 100%;
     @media (max-width: 500px) {

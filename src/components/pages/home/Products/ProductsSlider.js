@@ -73,7 +73,7 @@ const Wrap = styled.div``;
             <Wrap key={data.model}>
               <Products img={data.img} desc={data.desc} model={data.model} />
               <div className={classes["product-redirect"]}>
-              <Link to={`/products/${data.model}`}><span>learn more</span></Link>
+              <Link to={`/products/${data.model}`}><span><strong>Learn More</strong></span></Link>
             </div>
               
             </Wrap>
