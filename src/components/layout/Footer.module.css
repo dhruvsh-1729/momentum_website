@@ -22,10 +22,12 @@
   text-align: start;
   color: white;
   font-weight: 400;
+  padding:10px 10px;
 }
 .footer-container p {
   color: var(--color-font-grayish);
   text-align: start;
+  padding:10px 10px;
 }
 .footer-links {
   display: flex;
@@ -123,6 +125,7 @@
   .footer-container {
     border-bottom: none;
     flex-direction: column;
+    /* margin:10px 10px 10px 10px; */
   }
   .footer-about,
   .footer-important {
@@ -135,3 +138,4 @@
     display: none;
   }
 }
+

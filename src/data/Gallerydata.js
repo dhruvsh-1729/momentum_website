@@ -10,35 +10,43 @@ import image8 from './../components/assets/gallery/Render.png';
 const Gallerydata = [
     {
         image:image1,
-        desc:"Mapping"
+        desc:"Mapping/Navigation Interface",
+        id:1
     },
     {
         image:image2,
-        desc:"Mapping"
+        desc:"MRS IRRULAS 500",
+        id:2
     },
     {
         image:image3,
-        desc:"Mapping"
+        desc:"IRRULAS 1000 FRONT",
+        id:3
     },
     {
         image:image4,
-        desc:"Mapping"
+        desc:"IRRULAS 1000 REAR",
+        id:4
     },
     {
         image:image5,
-        desc:"Mapping"
+        desc:"MAIN IRRULAS DESIGN",
+        id:5
     },
     {
         image:image6,
-        desc:"Mapping"
+        desc:"MRS1 Build",
+        id:6
     },
     {
         image:image7,
-        desc:"Mapping"
+        desc:"IRRULAS REAR ",
+        id:7
     },
     {
         image:image8,
-        desc:"Mapping"
+        desc:"IRRULAS 300",
+        id:8
     }
 ]
 

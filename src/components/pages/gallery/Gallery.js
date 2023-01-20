@@ -1,19 +1,16 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import classes from "./Gallery.module.css";
 import Gallerydata from './../../../data/Gallerydata';
 import Card from "./../../layout/Card";
-// import image from "./../../assets/gallery/image.png";
-
-// import image1 from './../../assets/gallery/image.png';
-// import image2 from './../../assets/gallery/irulas_500_with_handle.jpg';
-// import image3 from './../../assets/gallery/irulas_1000_front.jpg';
-// import image4 from './../../assets/gallery/irulas_1000_rear.jpg';
-// import image5 from './../../assets/gallery/irulas.jpg';
-// import image6 from './../../assets/gallery/MRS1.jpeg';
-// import image7 from './../../assets/gallery/rear2.jpg';
-// import image8 from './../../assets/gallery/Render.png';
+import {useLocation} from "react-router-dom";
 
 function Gallery() {
+  const {pathname} = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <>
     <div className={classes.gallery} id="gallery">
@@ -99,19 +96,17 @@ function Gallery() {
   </div> */}
 
   {
-    Gallerydata.map((data,id) => {
+    Gallerydata.map((data) => {
       return(
-        <>
-      <div className="col" key={id}>
+      <div className="col" key={data.id}>
       <div className={classes["card"]}>
-      <img src={data.img} className="card-img-top" alt={data.desc} />
-      <div className="card-body">
-        <h5 className="card-title">{data.desc}</h5>
-        <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <img src={data.image} className="card-img-top" alt={data.desc} />
+      <div className={classes["card-body"]}>
+        <h5 className={classes["card-title"]}>{data.desc}</h5>
+        <p className={classes["card-text"]}>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
     </div>
   </div>
-        </>
       )
     })
   }

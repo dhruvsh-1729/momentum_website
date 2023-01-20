@@ -1,5 +1,6 @@
 import classes from "./Footer.module.css";
 import brandIcon from "../assets/logos/3-removebg-preview.png";
+import {Link} from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -11,11 +12,11 @@ const Footer = () => {
           </div>
           <div className={classes["footer-about-caption"]}>
             <p>
-              A product technology company proving next gen logistics solution.
+              A product technology company <br />providing next gen logistics solution.
             </p>
           </div>
           <div className={classes["footer-brand"]}>
-            <img src={brandIcon} alt="logo" />
+            <Link to="/"><img src={brandIcon} alt="logo" /></Link>
           </div>
         </div>
         <div className={classes["footer-contact"]}>
@@ -24,14 +25,14 @@ const Footer = () => {
           </div>
           <div className={classes["footer-address"]}>
             <p>
-              Address :Dynamic Logistics Trade Park, Bhosari Pune MH - 411015
+              <strong>Address</strong> :Dynamic Logistics Trade Park, Bhosari Pune MH - 411015
             </p>
 
-            <p>Phone : +91 965733 5122</p>
-            <p>Our Photo Gellary</p>
+            <p><strong>Phone</strong> : +91 965733 5122</p>
+            {/* <p>Our Photo Gellary</p> */}
           </div>
         </div>
-        <div className={classes["footer-important"]}>
+        {/* <div className={classes["footer-important"]}>
           <div className={classes["footer-heading"]}>
             <h2>IMPORTANT LINK</h2>
           </div>
@@ -42,7 +43,7 @@ const Footer = () => {
             <a href="/">Properties</a>
             <a href="/">Support</a>
           </div>
-        </div>
+        </div> */}
         <div className={classes["footer-newsletter"]}>
           <div className={classes["footer-heading"]}>
             <h2>NEWSLETTER</h2>
